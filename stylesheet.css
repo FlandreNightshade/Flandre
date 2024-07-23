@@ -6,6 +6,30 @@ a, a:link, a,visited {
   font-size: 20px;
 }
 
+:root {
+    --clr-light: #fdffc4;
+    --clr-dark: #00332a;
+    --clr-primary: #dbffa2;
+    --clr-secondary: #c3fcf2;
+    --clr-accent: #ff7750;
+  
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+  
+    --ff-title: "Playfair Display", serif;
+    --ff-body: "Assistant", sans-serif;
+  }
+
+.darkmode {
+    --clr-light: #fdffc4;
+    --clr-dark: #00332a;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+  
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+  }
 .Logo {
   font-family: ChopinScript;
   src: url(ChopinScript.ttf);
@@ -56,9 +80,11 @@ a, a:link, a,visited {
    	   color: red;
 }
 body {
+    font: 100%/1.125 'Lucida Grande','Lucida Sans Unicode',Verdana,Helvetica,sans-serif,'GNU Unifont';
   display: flex;
   flex-direction: column;
-    background: #b892ff;
+    background: var(--background);
+    color: var(--foreground);
     text-decoration: none;
   margin-top: 150px;
   min-height: 100vh;
@@ -80,12 +106,6 @@ body aside h1 {
   text-align: center;
 }
 
-.AboutMePic {
-  display: flex;
-  margin: 0 auto;
-  width: 50%;
- 
-}
 section aside {
   z-index: -10;
   background color; rgba(51, 51, 51, 0.6);
@@ -229,6 +249,14 @@ footer {
   background: #8EE4AF;
 }
 
+.ChapterWords {
+    box-sizing: content-box;
+display:block;
+float:none;
+line-height:22.6833px;
+position:static;
+z-index:auto;
+}
 .Chapter {
  margin-right: 20%;
   margin-left: 20%;
@@ -260,3 +288,4 @@ footer {
 .PrevNextChWrapper li:hover {
 	background: #8EE4AF;
 }
+
