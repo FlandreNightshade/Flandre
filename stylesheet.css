@@ -258,9 +258,13 @@ position:static;
 z-index:auto;
 }
 .Chapter {
+  padding-left: 2px;
+  padding-right: 2px;
  margin-right: 20%;
   margin-left: 20%;
   border: 1px solid white;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .PrevNextChWrapper {
@@ -344,4 +348,19 @@ z-index:auto;
   border-radius: 5px;
   width: 30px;
   height: 30px;
+}
+
+.sidebar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
