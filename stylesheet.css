@@ -311,7 +311,7 @@ z-index:auto;
 .btn-secondary {
   background: var(--foreground);
   color: var(--background);
-  // border: currentColor solid 2px;
+  border: currentColor solid 2px;
 }
 
 .btn-accent {
